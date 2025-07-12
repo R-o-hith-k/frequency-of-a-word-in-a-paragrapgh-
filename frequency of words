@@ -1,0 +1,13 @@
+s=input("enter a para:::")
+words=s.split()
+used=[]
+d={}
+for i in words:
+    count=0
+    if i not in used:
+        for j in words:
+            if (i==j):
+                count+=1
+        used.append(i)
+        d[i]=count
+print(d)
